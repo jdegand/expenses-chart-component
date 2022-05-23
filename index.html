@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="my_balance">
+      <div>
+        <p>My Balance</p>
+        <h1 class="weight-700">$921.48</h1>
+      </div>
+      <div>
+        <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#382314" cx="48" cy="24" r="24"/>
+            <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+    <section class="white_bg">
+      <h2 class="weight-700 dark_brown">Spending - Last 7 days</h2>
+      <canvas id="barChart"></canvas>
+      <hr />
+      <div class="dl_wrapper">
+        <dl class="neg-margin">
+          <dt class="md_brown">Total this month</dt>
+          <dd class="fs-42 weight-700 dark_brown">$478.33</dd>
+        </dl>
+        <dl class="margin-start">
+          <dt class="weight-700 dark_brown">+2.4%</dt>
+          <dd class="md_brown">from last month</dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
